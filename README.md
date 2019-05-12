@@ -1,7 +1,5 @@
 ![PiBorg's Diablo](diablo_banner.png)
 
-Quick Start Guide:
-
 Shop: [https://www.piborg.org/diablo](https://www.piborg.org/diablo)
 
 The Diablo is a dual channel motor controller for use with the Raspberry Pi, Arduino and other I2C capable SBCs.
@@ -48,8 +46,8 @@ For troubleshooting with the Diablo please refer to our [troubleshooting pages](
 
 If you find a bug with the Diablo code, please feel free to report it as an issue. When reporting issues with this library please supply:
 - Raspberry Pi OS Version (Raspbian Stretch etc.)
-- Hardware setup (number of motors, power source)
+- Hardware setup (number of motors, motor type, power source)
 - Sample code
 - Errors shown.
 
-Issues which are opened without this information will be closed until this can be provided.
+Please supply as much information as you can so we can replicate the bug locally. :)
