@@ -25,10 +25,10 @@ This will install the Diablo library, the PiBorg Motor GUI and all dependencies 
 There are several examples in this repository to give you an idea of how to use the library with hardware.
 
 ## ```diabloGui.py```
-Control a motor using Diablo and a GUI with two sliders. This is the example used in our [Quick Start Guide]().
+Control a motor using Diablo and a GUI with a slider bar. The setup for this example is explained in our  [Quick Start Guide](https://www.piborg.org/blog/diablo-quick-start-guide).
 
 ## ```diabloJoystick.py```
-Control a motor using Diablo, aPS4 controller and [Pygame](https://www.pygame.org/)
+Control a motor using Diablo, a PS4 controller and [Pygame](https://www.pygame.org/)
 
 ## ```diabloSequnce.py```
 Driving two motors at a sequence of speeds using a Diablo.
