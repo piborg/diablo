@@ -1,4 +1,4 @@
-![PiBorg's Diablo](diablo_banner.png)
+[![PiBorg's Diablo](diablo_banner.png)](https://piborg.org/diablo)
 
 The [Diablo](https://www.piborg.org/diablo) is a dual channel motor controller for use with the Raspberry Pi, Arduino and other I2C capable SBCs.
 
@@ -7,7 +7,7 @@ It can be used with motors or steppers from 7V to 40V and is current limited to 
 Shop: [Diablo](https://www.piborg.org/diablo)
 
 # Quick Start Guide
-Our complete Quick Start Guide will show you how to use the ```diabloGui.py``` and a one motor setup with a Raspberry Pi and Diablo.
+Our complete [Quick Start Guide](https://www.piborg.org/blog/diablo-quick-start-guide) will show you how to use the ```diabloGui.py``` and a one motor setup with a Raspberry Pi and Diablo.
 
 # Install this Library
 ```
@@ -25,7 +25,7 @@ This will install the Diablo library, the PiBorg Motor GUI and all dependencies 
 There are several examples in this repository to give you an idea of how to use the library with hardware.
 
 ## ```diabloGui.py```
-Control a motor using Diablo and a GUI with a slider bar. The setup for this example is explained in our  [Quick Start Guide](https://www.piborg.org/blog/diablo-quick-start-guide).
+Control a motor using Diablo and a GUI with a slider bar. The setup for this example is explained in our [Quick Start Guide](https://www.piborg.org/blog/diablo-quick-start-guide).
 
 ## ```diabloJoystick.py```
 Control a motor using Diablo, a PS4 controller and [Pygame](https://www.pygame.org/)
