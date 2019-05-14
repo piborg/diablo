@@ -30,7 +30,7 @@ Control a motor using Diablo and a GUI with a slider bar. The setup for this exa
 ## ```diabloJoystick.py```
 Control a motor using Diablo, a PS4 controller and [Pygame](https://www.pygame.org/)
 
-## ```diabloSequnce.py```
+## ```diabloSequence.py```
 Driving two motors at a sequence of speeds using a Diablo.
 
 ## ```diabloStepper.py```
