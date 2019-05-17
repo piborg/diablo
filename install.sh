@@ -33,7 +33,7 @@ echo "[Desktop Entry]" > ${DIABLO_SHORTCUT}
 echo "Encoding=UTF-8" >> ${DIABLO_SHORTCUT}
 echo "Version=1.0" >> ${DIABLO_SHORTCUT}
 echo "Type=Application" >> ${DIABLO_SHORTCUT}
-echo "Exec=${DDIABLO}/diabloGui_py3.py" >> ${DIABLO_SHORTCUT}
+echo "Exec=${DDIABLO}/diabloGui.py" >> ${DIABLO_SHORTCUT}
 echo "Icon=${DDIABLO}/piborg.ico" >> ${DIABLO_SHORTCUT}
 echo "Terminal=false" >> ${DIABLO_SHORTCUT}
 echo "Name=Diablo Demo GUI" >> ${DIABLO_SHORTCUT}
