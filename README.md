@@ -36,7 +36,7 @@ Driving two motors at a sequence of speeds using a Diablo.
 ## ```diabloStepper.py```
 Driving a 4 wire stepper motor using a Diablo.
 
-## ```diabloStepperSequnce.py```
+## ```diabloStepperSeq.py```
 Driving a 4 wire stepper motor using a sequnce of movements via a Diablo.
 
 # Troubleshooting
