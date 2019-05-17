@@ -19,7 +19,7 @@ chmod +x install.sh
 This will install the Diablo library, the PiBorg Motor GUI and all dependencies needed to run the set of examples contained here.
 
 # Diablo Library
-```diablo.py``` contains the Diablo library with lots of functions describing how to use the Diablo. For a full breakdown of the API available please see the [Diablo API]().
+```diablo.py``` contains the Diablo library with lots of functions describing how to use the Diablo. For a full breakdown of the API available please see the Diablo API (link coming soon).
 
 # Examples
 There are several examples in this repository to give you an idea of how to use the library with hardware.
