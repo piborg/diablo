@@ -44,10 +44,6 @@ For troubleshooting with the Diablo please refer to our [troubleshooting pages](
 
 # Reporting Issues
 
-If you find a bug with the Diablo code, please feel free to report it as an issue. When reporting issues with this library please supply:
-- Raspberry Pi OS Version (Raspbian Stretch etc.)
-- Hardware setup (number of motors, motor type, power source)
-- Sample code
-- Errors shown.
+If you find a bug with the Diablo code, please feel free to report it as an issue. When reporting issues with this library please fill in the issue report with as much information as you can to help us help you.
 
 Please supply as much information as you can so we can replicate the bug locally. :)
