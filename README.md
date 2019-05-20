@@ -28,16 +28,16 @@ There are several examples in this repository to give you an idea of how to use 
 Control a motor using Diablo and a GUI with a slider bar. The setup for this example is explained in our [Quick Start Guide](https://www.piborg.org/blog/diablo-quick-start-guide).
 
 ## ```diabloJoystick.py```
-Control a motor using Diablo, a PS4 controller and [Pygame](https://www.pygame.org/)
+Control a motor using Diablo, a PS4 controller and [Pygame](https://www.pygame.org/).
 
 ## ```diabloSequence.py```
-Driving two motors at a sequence of speeds using a Diablo.
+Driving two motors at a sequence of speeds using a Diablo. Full tutorial is [available on our website](https://www.piborg.org/blog/build/diablo-build/diablo-motor-sequence-example).
 
 ## ```diabloStepper.py```
-Driving a 4 wire stepper motor using a Diablo.
+Driving a 4 wire stepper motor using a Diablo. Follow the [full tutorial on our site](https://www.piborg.org/blog/build/diablo-build/diablo-stepper-example).
 
 ## ```diabloStepperSeq.py```
-Driving a 4 wire stepper motor using a sequnce of movements via a Diablo.
+Driving a 4 wire stepper motor using a sequnce of movements via a Diablo. Follow the [full tutorial on our site](https://www.piborg.org/blog/build/diablo-build/diablo-stepper-example).
 
 # Troubleshooting
 For troubleshooting with the Diablo please refer to our [troubleshooting pages](https://www.piborg.org/blog/diablo-troubleshooting) and for further help please post questions on our [forum](http://forum.piborg.org/forum/diablo).
