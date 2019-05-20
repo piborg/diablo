@@ -27,7 +27,7 @@ If applicable, add screenshots to help explain your problem.
  - Lite/Desktop
  - Version [e.g. 22]
 
-** Hardware setup
+**Hardware setup**
  - Motor/Stepper type
  - Power supply type
  - Image of wiring if possible
