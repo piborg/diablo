@@ -25,18 +25,18 @@ degPerStep= 1.8                                                 # Number of degr
 
 # Calculate our maxPower and holdingPower
 if(type(voltageIn) is str or type(stepperCurrent) is str or type(stepperResistance) is str):
-	print('Please set the voltageIn, stepperCurrent and stepperResistance to appropriate values in the script.')
-	exit()
-	
+    print('Please set the voltageIn, stepperCurrent and stepperResistance to appropriate values in the script.')
+    exit()
+
 voltageOut = float(stepperCurrent) * float(stepperResistance)
 stepperPower = voltageOut / float(voltageIn)
 maxPower = driveLevel * stepperPower
 
-sequence = [                            # Order for stepping 
+sequence = [                            # Order for stepping
         [+maxPower, +maxPower],
         [+maxPower, -maxPower],
         [-maxPower, -maxPower],
-        [-maxPower, +maxPower]] 
+        [-maxPower, +maxPower]]
 
 # Name the global variables
 global step
@@ -103,17 +103,6 @@ def MoveDeg(angle):
     count = int(angle / float(degPerStep))
     MoveStep(count)
 
-# Function to switch to holding power
-def HoldPosition():
-    global step
-    global DIABLO
-
-    # For the current step set the required holding drive values
-    if step < len(sequence):
-        drive = sequenceHold[step]
-        DIABLO.SetMotor1(drive[0])
-        DIABLO.SetMotor2(drive[1])
-
 try:
     # Start by turning all drives off
     DIABLO.MotorsOff()
@@ -134,5 +123,3 @@ except KeyboardInterrupt:
     DIABLO.MotorsOff()
     print()
     print('Terminated')
-
-

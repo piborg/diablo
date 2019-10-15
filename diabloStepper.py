@@ -25,15 +25,15 @@ stepDelay = 0.01
 
 # Calculate our maxPower and holdingPower
 if(type(voltageIn) is str or type(stepperCurrent) is str or type(stepperResistance) is str):
-	print('Please set the voltageIn, stepperCurrent and stepperResistance to appropriate values in the script.')
-	exit()
-	
+    print('Please set the voltageIn, stepperCurrent and stepperResistance to appropriate values in the script.')
+    exit()
+
 voltageOut = float(stepperCurrent) * float(stepperResistance)
 stepperPower = voltageOut / float(voltageIn)
 maxPower = driveLevel * stepperPower
 holdingPower = holdLevel * stepperPower
 
-sequence = [                            # Order for stepping 
+sequence = [                            # Order for stepping
         [+maxPower, +maxPower],
         [+maxPower, -maxPower],
         [-maxPower, -maxPower],
@@ -42,7 +42,7 @@ sequenceHold = [                        # Order for stepping at holding power
         [+holdingPower, +holdingPower],
         [+holdingPower, -holdingPower],
         [-holdingPower, -holdingPower],
-        [-holdingPower, +holdingPower]] 
+        [-holdingPower, +holdingPower]]
 
 # Name the global variables
 global step
@@ -137,4 +137,3 @@ except KeyboardInterrupt:
     DIABLO.MotorsOff()
     print()
     print('Terminated')
-

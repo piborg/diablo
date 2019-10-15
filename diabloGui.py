@@ -8,9 +8,10 @@
 #
 ###
 
-# Import library functions we need 
+# Import library functions we need
 from __future__ import print_function
 from diablo import *
+from sys import exit
 try:
     import Tkinter as tk
 except ImportError:
@@ -31,7 +32,7 @@ if not DIABLO.foundChip:
             print('    %02X (%d)' % (board, board))
         print('If you need to change the I2C address change the set-up line so it is correct, e.g.')
         print('DIABLO.i2cAddress = 0x%02X' % (boards[0]))
-    sys.exit()
+    exit()
 #DIABLO.SetEpoIgnore(True)          # Uncomment to disable EPO latch, needed if you do not have a switch / jumper
 DIABLO.ResetEpo()                   # Reset the stop switch (EPO) state
                                     # If you do not have a switch across the two pin header then fit the jumper
@@ -76,7 +77,7 @@ class Diablo_tk(tk.Tk):
         # Turn drives off and end the program
         DIABLO.MotorsOff()
         self.quit()
-  
+
     # Called when sld1 is moved
     def sld1_move(self, value):
         global DIABLO
@@ -98,4 +99,3 @@ class Diablo_tk(tk.Tk):
 if __name__ == "__main__":
     app = Diablo_tk(None)
     app.mainloop()
-
