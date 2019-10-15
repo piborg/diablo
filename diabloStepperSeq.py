@@ -21,7 +21,7 @@ stepperResistance = 'llama'
 
 driveLevel = 1.0
 stepDelay = 0.01
-degPerStep= 1.8                                                 # Number of degrees moved per step
+degPerStep = 1.8                                                 # Number of degrees moved per step
 
 # Calculate our maxPower and holdingPower
 if(type(voltageIn) is str or type(stepperCurrent) is str or type(stepperResistance) is str):
