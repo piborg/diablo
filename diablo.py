@@ -215,10 +215,10 @@ Command codes can be found at the top of Diablo.py, data is a list of 0 or more 
 Under most circumstances you should use the appropriate function instead of RawWrite
         """
         if (version_info[0] < 3):
-                rawOutput = chr(command)
-                for singleByte in data:
-                    rawOutput += chr(singleByte)
-                self.i2cWrite.write(rawOutput)
+            rawOutput = chr(command)
+            for singleByte in data:
+                rawOutput += chr(singleByte)
+            self.i2cWrite.write(rawOutput)
         else:
             rawOutput = [command]
             rawOutput.extend(data)
@@ -278,7 +278,7 @@ Print(message)
 
 Wrapper used by the Diablo instance to print(messages, will call printFunction if set, print otherwise)
         """
-        if self.printFunction == None:
+        if self.printFunction is None:
             print(message)
         else:
             self.printFunction(message)
@@ -538,7 +538,7 @@ Reads the system EPO latch state.
 If False the EPO has not been tripped, and movement is allowed.
 If True the EPO has been tripped, movement is disabled if the EPO is not ignored (see SetEpoIgnore)
     Movement can be re-enabled by calling ResetEpo.
-        """ 
+        """
         try:
             i2cRecv = self.RawRead(COMMAND_GET_EPO, I2C_MAX_LEN)
         except KeyboardInterrupt:
@@ -577,7 +577,7 @@ Sets the system to ignore or use the EPO latch, set to False if you have an EPO 
 state = GetEpoIgnore()
 
 Reads the system EPO ignore state, False for using the EPO latch, True for ignoring the EPO latch
-        """ 
+        """
         try:
             i2cRecv = self.RawRead(COMMAND_GET_EPO_IGNORE, I2C_MAX_LEN)
         except KeyboardInterrupt:
@@ -620,7 +620,7 @@ state = GetCommsFailsafe()
 
 Read the current system state of the communications failsafe, True for enabled, False for disabled
 The failsafe will turn the motors off unless it is commanded at least once every 1/4 of a second
-        """ 
+        """
         try:
             i2cRecv = self.RawRead(COMMAND_GET_FAILSAFE, I2C_MAX_LEN)
         except KeyboardInterrupt:
@@ -663,7 +663,7 @@ The encoder based move mode is disabled at power on
 state = GetEncoderMoveMode()
 
 Read the current system state of the encoder based move mode, True for enabled (encoder moves), False for disabled (power level moves)
-        """ 
+        """
         try:
             i2cRecv = self.RawRead(COMMAND_GET_ENC_MODE, I2C_MAX_LEN)
         except KeyboardInterrupt:
@@ -786,7 +786,7 @@ EncoderMoveMotors(5)     -> all motors moving forward for 5 counts
 state = IsEncoderMoving()
 
 Reads the current state of the encoder motion, False for all motors have finished, True for any motor is still moving
-        """ 
+        """
         try:
             i2cRecv = self.RawRead(COMMAND_GET_ENC_MOVING, I2C_MAX_LEN)
         except KeyboardInterrupt:
@@ -893,7 +893,7 @@ state = GetEnabled()
 Gets if the system is powering the motor drive pins
 If True all of the motor pins are either low, high, or PWMed (powered)
 If False all of the motor pins are tri-stated (unpowered)
-        """ 
+        """
         try:
             i2cRecv = self.RawRead(COMMAND_GET_ENABLED, I2C_MAX_LEN)
         except KeyboardInterrupt:
@@ -921,4 +921,3 @@ Displays the names and descriptions of the various functions and settings provid
         print()
         for func in funcListSorted:
             print('=== %s === %s' % (func.func_name, func.func_doc))
-
