@@ -4,7 +4,7 @@ DDIABLO=`pwd`
 
 echo '=== Installing prerequisites ==='
 sudo apt update
-sudo apt -y install i2c-tools python3-smbus python3-pygame python3-rpi.gpio python-smbus python-pygame python-rpi.gpio
+sudo apt -y install i2c-tools python3-pygame python3-rpi.gpio python-pygame python-rpi.gpio
 
 echo '=== Removing I2C devices from the blacklisting ==='
 sudo cp /etc/modprobe.d/raspi-blacklist.conf /etc/modprobe.d/raspi-blacklist.conf.old
