@@ -13,8 +13,7 @@ Our complete [Quick Start Guide](https://www.piborg.org/blog/diablo-quick-start-
 ```
 git clone https://github.com/piborg/diablo
 cd diablo
-chmod +x install.sh
-./install.sh
+bash install.sh
 ```
 This will install the Diablo library, the PiBorg Motor GUI and all dependencies needed to run the set of examples contained here.
 
